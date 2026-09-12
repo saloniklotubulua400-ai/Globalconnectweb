@@ -1,0 +1,106 @@
+/* Main Card Container */
+.order-summary-card {
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.summary-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #020617;
+  margin: 0;
+}
+
+.summary-content {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Flex Utilities */
+.flex-between {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Labels & Field Values */
+.field-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #94a3b8;
+  margin: 0;
+}
+
+.field-value {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.field-value.empty {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* Badge */
+.country-badge {
+  border-radius: 0.5rem;
+  background-color: #eff6ff;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #2563eb;
+  white-space: nowrap;
+}
+
+/* Divider & Secondary Text */
+.summary-divider {
+  border-top: 1px solid #f1f5f9;
+}
+
+.text-secondary {
+  color: #64748b;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+/* Total Box Section */
+.total-box {
+  border-radius: 0.75rem;
+  background-color: #f8fafc;
+  padding: 1rem;
+}
+
+.total-box .flex-between {
+  align-items: center;
+}
+
+.total-label {
+  font-weight: 900;
+  color: #020617;
+}
+
+.total-amount {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #2563eb;
+}
+
+.total-hint {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #94a3b8;
+}

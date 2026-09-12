@@ -1,0 +1,93 @@
+/* Container & Label */
+.phone-input-group {
+  width: 100%;
+}
+
+.phone-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+/* Input Wrapper & States */
+.phone-input-container {
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.phone-input-container:focus-within {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px #dbeafe;
+}
+
+.phone-input-container.error {
+  border-color: #f87171;
+}
+
+.phone-input-container.error:focus-within {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 4px #fee2e2;
+}
+
+/* Prefix Dial Code Badge */
+.dial-code-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  border-right: 1px solid #e2e8f0;
+  background-color: #f8fafc;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.flag-icon {
+  line-height: 1;
+}
+
+/* Text Input Field */
+.phone-field {
+  min-width: 0;
+  flex: 1;
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e293b;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.phone-field::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+/* Validation Icon */
+.valid-checkmark {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  color: #16a34a;
+  font-weight: 700;
+}
+
+/* Helper & Error Text */
+.helper-text {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.helper-text.error {
+  color: #ef4444;
+  font-weight: 500;
+}

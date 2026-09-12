@@ -1,0 +1,142 @@
+/* Container & Label */
+.country-selector {
+  position: relative;
+  width: 100%;
+}
+
+.selector-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+/* Combobox Trigger Button */
+.selector-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1e293b;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.selector-button:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px #dbeafe;
+}
+
+.selected-value {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.placeholder-value {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.dropdown-arrow {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu Overlay */
+.dropdown-menu {
+  position: absolute;
+  z-index: 20;
+  margin-top: 0.5rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.search-container {
+  border-bottom: 1px solid #f1f5f9;
+  padding: 0.5rem;
+}
+
+.search-input {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  color: #1e293b;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #3b82f6;
+}
+
+/* List Items */
+.country-list {
+  max-height: 15rem;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0.25rem 0;
+  list-style: none;
+}
+
+.no-results {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.country-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.country-option.active {
+  background-color: #eff6ff;
+}
+
+.country-option.selected {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.country-flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.country-name {
+  flex: 1;
+}
+
+.country-code {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #94a3b8;
+}

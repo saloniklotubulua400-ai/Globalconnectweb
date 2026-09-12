@@ -1,0 +1,438 @@
+/* Container & Root Page */
+.esim-page {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  color: #0f172a;
+  padding: 48px 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.esim-container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.esim-hero {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.esim-visual {
+  display: grid;
+  place-items: center;
+  min-height: 420px;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 30% 20%, #6366f1, transparent 35%),
+    linear-gradient(135deg, #111827, #312e81);
+}
+
+.esim-sim-card {
+  width: min(300px, 70%);
+  aspect-ratio: 1.58;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 18px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+  transform: rotate(-6deg);
+}
+
+.esim-sim-chip {
+  width: 48px;
+  height: 38px;
+  border-radius: 7px;
+  background-color: #facc15;
+}
+
+.esim-logo {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.esim-country {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Breadcrumb & Badges */
+.esim-breadcrumb {
+  margin-bottom: 20px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.esim-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background-color: #dcfce7;
+  color: #166534;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.esim-content h1 {
+  margin: 14px 0 12px;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1;
+  font-weight: 800;
+}
+
+.esim-description {
+  max-width: 620px;
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Metadata Bar */
+.esim-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.esim-meta div {
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.esim-meta span,
+.esim-meta strong {
+  display: block;
+}
+
+.esim-meta span {
+  margin-bottom: 4px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.esim-meta strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Plan Selection */
+.esim-plans h2 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.esim-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.esim-plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 18px;
+  border: 2px solid #e2e8f0;
+  border-radius: 14px;
+  background-color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.esim-plan:hover,
+.esim-plan.selected {
+  border-color: #6366f1;
+}
+
+.esim-plan.selected {
+  background-color: #f5f3ff;
+}
+
+.esim-popular {
+  position: absolute;
+  top: -10px;
+  right: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background-color: #6366f1;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.esim-plan-data {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.esim-plan-duration,
+.esim-plan-description {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.esim-plan-price {
+  margin: 12px 0 5px;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.esim-plan-description {
+  line-height: 1.5;
+}
+
+/* Quantity & Checkout Controls */
+.esim-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.esim-quantity,
+.esim-total {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.esim-quantity span,
+.esim-total span {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.quantity-control button,
+.quantity-control span {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background-color: #ffffff;
+  font: inherit;
+  font-size: 14px;
+}
+
+.quantity-control button {
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.15s ease;
+}
+
+.quantity-control button:hover {
+  background-color: #f1f5f9;
+}
+
+.esim-total strong {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.esim-buy {
+  width: 100%;
+  margin-top: 18px;
+  padding: 16px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #111827;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.esim-buy:hover {
+  background-color: #000000;
+}
+
+.esim-secure {
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+/* Feature Grid */
+.esim-features,
+.esim-how-it-works,
+.esim-help {
+  margin-top: 70px;
+}
+
+.esim-features h2,
+.esim-how-it-works h2 {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.esim-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.esim-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.esim-check {
+  color: #16a34a;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+/* How It Works Steps */
+.esim-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.esim-steps > div {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.esim-steps span {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border-radius: 50%;
+  background-color: #6366f1;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.esim-steps h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.esim-steps p,
+.esim-instructions p {
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Help & Accordion Instructions */
+.esim-help {
+  text-align: center;
+}
+
+.esim-help > button {
+  padding: 12px 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background-color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+
+.esim-help > button:hover {
+  background-color: #f8fafc;
+}
+
+.esim-instructions {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.esim-instructions h2 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.esim-instructions ol {
+  margin: 0 0 16px;
+  padding-left: 20px;
+  line-height: 1.7;
+  color: #334155;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  .esim-page {
+    padding: 24px 14px;
+  }
+
+  .esim-hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .esim-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .esim-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .esim-plan-grid,
+  .esim-meta,
+  .esim-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .esim-order {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
